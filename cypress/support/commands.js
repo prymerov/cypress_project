@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+// Cypress.Commands.add('login', (email, password) => { ... })
+
+
+Cypress.Commands.add('login', (login) => {
+
+cy.visit("https://time.fortegrp.com/#/login")
+cy.get("#inputLogin").type(login)
+cy.contains("Continue").click()
+
+})
