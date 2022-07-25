@@ -32,11 +32,11 @@ cy.get(".ui-menu-item div").each(($el, index, $list) => {
 })
 
 ////ДОДЕЛАТЬ
-it("Open new Window", () => {
-cy.visit("https://codenboxautomationlab.com/practice/")
-cy.get("#openwindow").should("have.text", "Open Window").invoke("removeAttr", "onclick").click()
-cy.url("should.eq", "http://www.codenbox.com/")
-})
+// it("Open new Window", () => {
+// cy.visit("https://codenboxautomationlab.com/practice/")
+// cy.get("#openwindow").should("have.text", "Open Window").invoke("removeAttr", "onclick").click()
+// cy.url("should.eq", "http://www.codenbox.com/")
+// })
 
 it("Open new Tab", () => {
   cy.visit("https://codenboxautomationlab.com/practice/")
